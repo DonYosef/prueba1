@@ -1,20 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Bienvenido a NotFound!
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="../../assets/img/Imagen_Login.png" />
+    <ion-card-header>
+      <label for="nombre">Usuario: </label>
+      <input type="text" name="nombre">
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" name="contrasena">
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <ion-button routerLink="/participantes">Iniciar sesion</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

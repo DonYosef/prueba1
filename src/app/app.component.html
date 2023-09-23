@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          Menú principal
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <a href="/participantes">Lista de participantes</a>
+    </ion-content>
+    <a href="/home" style="color: red;">Salir</a>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

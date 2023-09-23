@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lista de participantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <h5>Lista participantes activos:</h5>
+  <app-participante-activo [activo]="participanteActivo"></app-participante-activo>
+  <h5>Lista participantes inactivos:</h5>
+  <app-participante-inactivo [inactivo]="participanteInactivo"></app-participante-inactivo>
+</ion-content>
